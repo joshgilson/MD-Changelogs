@@ -4,6 +4,7 @@
         <element>com_jreleaser</element>
         <type>component</type>
         <version>1.0.0</version>
+        <date>December 3, 2025</date>
         <addition>
             <item>JReleaser - First Release</item>
         </addition>
