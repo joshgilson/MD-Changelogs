@@ -3,6 +3,51 @@
     <changelog>
         <element>plg_rsform</element>
         <type>extension</type>
+        <version>1.2.1</version>
+        <date>January 30, 2023</date>
+        <change>
+            <item>Changed the element's YOOtheme Pro group from "Custom" to "Modern Designs"</item>
+        </change>
+    </changelog>
+    <changelog>
+        <element>plg_rsform</element>
+        <type>extension</type>
+        <version>1.2.0</version>
+        <date>June 24, 2022</date>
+        <fix>
+            <item>Updated so RSForm!Pro v3 forms are show when saved or added</item>
+        </fix>
+    </changelog>
+    <changelog>
+        <element>plg_rsform</element>
+        <type>extension</type>
+        <version>1.1.0</version>
+        <date>June 24, 2021</date>
+        <fix>
+            <item>Updated to work with RSForm!Pro v3+ with new FormName changes</item>
+        </fix>
+    </changelog>
+    <changelog>
+        <element>plg_rsform</element>
+        <type>extension</type>
+        <version>1.0.4</version>
+        <date>April 21, 2021</date>
+        <fix>
+            <item>Edit button link path updated if used on a localhost</item>
+        </fix>
+    </changelog>
+    <changelog>
+        <element>plg_rsform</element>
+        <type>extension</type>
+        <version>1.0.3</version>
+        <date>April 13, 2021</date>
+        <fix>
+            <item>Update Link</item>
+        </fix>
+    </changelog>
+    <changelog>
+        <element>plg_rsform</element>
+        <type>extension</type>
         <version>1.0.2</version>
         <date>April 12, 2021</date>
         <remove>
