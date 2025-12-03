@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+    <changelog>
+        <element>com_customcart</element>
+        <type>component</type>
+        <version>1.0.1</version>
+        <change>
+            <item>Additional language strings added and translated for the front-end and back-end</item>
+        </change>
+        <addition>
+            <item>Cache refresh function when a language is changed</item>
+            <item>Option to change the alert box style on the cart when additional shipping methods are used</item>
+        </addition>
+    </changelog>
+    <changelog>
+        <element>com_customcart</element>
+        <type>component</type>
+        <version>1.0.0</version>
+        <addition>
+            <item>CustomCart - First Release</item>
+        </addition>
+    </changelog>
+</changelogs>
