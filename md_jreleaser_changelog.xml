@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+    <changelog>
+        <element>com_jreleaser</element>
+        <type>component</type>
+        <version>1.0.0</version>
+        <addition>
+            <item>JReleaser - First Release</item>
+        </addition>
+    </changelog>
+</changelogs>
