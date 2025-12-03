@@ -4,6 +4,7 @@
         <element>com_customcart</element>
         <type>component</type>
         <version>1.0.1</version>
+        <date>December 2, 2025</date>
         <change>
             <item>Additional language strings added and translated for the front-end and back-end</item>
         </change>
@@ -16,6 +17,7 @@
         <element>com_customcart</element>
         <type>component</type>
         <version>1.0.0</version>
+        <date>December 1, 2025</date>
         <addition>
             <item>CustomCart - First Release</item>
         </addition>
