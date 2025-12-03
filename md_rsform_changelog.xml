@@ -3,6 +3,30 @@
     <changelog>
         <element>plg_rsform</element>
         <type>extension</type>
+        <version>1.0.2</version>
+        <date>April 12, 2021</date>
+        <remove>
+            <item>Old element settings</item>
+        </remove>
+        <change>
+            <item>Update Link Updated</item>
+        </change>
+    </changelog>
+    <changelog>
+        <element>plg_rsform</element>
+        <type>extension</type>
+        <version>1.0.1</version>
+        <date>April 11, 2021</date>
+        <change>
+            <item>Edit Button</item>
+        </change>
+        <addition>
+            <item>New Icons</item>
+        </addition>
+    </changelog>
+    <changelog>
+        <element>plg_rsform</element>
+        <type>extension</type>
         <version>1.0.0</version>
         <date>April 9, 2021</date>
         <addition>
