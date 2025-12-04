@@ -4,10 +4,11 @@
         <element>com_customcart</element>
         <type>component</type>
         <version>1.0.2</version>
+        <date>December 3, 2025</date>
         <fix>
             <item>Image Placement setting now correctly hidden when using 2 or 3 column layouts</item>
             <item>Height Expand panel setting now properly fills available column space</item>
-            <item>Box Shadow & Box Decoration no longer get cut off by container margins</item>
+            <item>Box Shadow &amp; Box Decoration no longer get cut off by container margins</item>
             <item>Pricing Tiers now correctly disable quantity controls in the cart</item>
             <item>Dropdown order options now display in correct order (1st, 2nd, 3rd, 4th, 5th)</item>
         </fix>
