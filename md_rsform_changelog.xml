@@ -6,7 +6,7 @@
         <version>1.6.0</version>
         <date>November 26, 2025</date>
         <change>
-            <item>Joomla 5 & 6 Compatibility</item>
+            <item>Joomla 5 &amp; 6 Compatibility</item>
             <item>QoL Updates and code refactoring</item>
         </change>
     </changelog>
@@ -16,7 +16,7 @@
         <version>1.5.0</version>
         <date>October 6, 2024</date>
         <addition>
-            <item>Added 6 Pre-Filled Group Options for Field Names & Field Values with sources</item>
+            <item>Added 6 Pre-Filled Group Options for Field Names &amp; Field Values with sources</item>
             <item>Added Sources as a default option</item>
         </addition>
         <change>
@@ -30,7 +30,7 @@
         <date>April 3, 2024</date>
         <addition>
             <item>Dynamic Source Added (Use the number of a form, ie. 10)</item>
-            <item>Fully verfied plugin with Joomla 5 & Php 8</item>
+            <item>Fully verfied plugin with Joomla 5 &amp; Php 8</item>
         </addition>
         <change>
             <item>Refactored some old code</item>
