@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
+        <changelog>
+        <element>com_customcart</element>
+        <type>component</type>
+        <version>1.0.3</version>
+        <date>December 4, 2025</date>
+        <addition>
+            <item>Introducing Carto - the CustomCart AI Assistant in the back-end of CustomCart</item>
+        </addition>
+        <fix>
+            <item>Updated CC Product Element image and panel settings with more options and better layout</item>
+            <item>Updated cart fullfilment layout and shipping prices</item>
+        </fix>
+        <change>
+            <item>Added uk-form-small styling to all cart fulfillment dropdowns</item>
+        </change>
+    </changelog>
     <changelog>
         <element>com_customcart</element>
         <type>component</type>
