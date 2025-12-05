@@ -12,9 +12,6 @@
             <item>Updated CC Product Element image and panel settings with more options and better layout</item>
             <item>Updated cart fullfilment layout and shipping prices</item>
         </fix>
-        <change>
-            <item>Added uk-form-small styling to all cart fulfillment dropdowns</item>
-        </change>
     </changelog>
     <changelog>
         <element>com_customcart</element>
