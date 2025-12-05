@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
-        <changelog>
+    <changelog>
         <element>com_customcart</element>
         <type>component</type>
         <version>1.0.3</version>
