@@ -2,12 +2,12 @@
 <changelogs>
       <changelog>
         <element>plg_spacer</element>
-        <type>component</type>
+        <type>extension</type>
         <version>1.2.0</version>
         <date>December 4, 2024</date>
         <addition>
             <item>Added full support for Joomla 5.4 and Joomla 6</item>
-            <item>Added full support for PHP 8.1, 8.2, 8.3, and 8.4+</item>
+            <item>Added full support for PHP 8.1 through 8.4+</item>
         </addition>
         <fix>
             <item>Removed deprecated Joomla compatibility code</item>
@@ -18,7 +18,7 @@
     </changelog>
     <changelog>
         <element>plg_spacer</element>
-        <type>component</type>
+        <type>extension</type>
         <version>1.1.0</version>
         <date>November 5, 2024</date>
         <addition>
@@ -33,7 +33,7 @@
     </changelog>
     <changelog>
         <element>plg_spacer</element>
-        <type>component</type>
+        <type>extension</type>
         <version>1.0.0</version>
         <date>February 25, 2023</date>
         <addition>
