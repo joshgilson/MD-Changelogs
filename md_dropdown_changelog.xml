@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+      <changelog>
+        <element>plg_dropdown</element>
+        <type>extension</type>
+        <version>1.2.0</version>
+        <date>December 5, 2025</date>
+        <addition>
+            <item>Added support for Joomla 5.4 and Joomla 6</item>
+            <item>Added support for PHP 8.1 and PHP 8.4+</item>
+        </addition>
+        <fix>
+            <item>Cleaned up codebase and removed unused code</item>
+        </fix>
+        <remove>
+            <item>Removed download key/license requirement</item>
+        </remove>
+    </changelog>
+    <changelog>
+        <element>plg_dropdown</element>
+        <type>extension</type>
+        <version>1.1.0</version>
+        <date>November 5, 2024</date>
+        <addition>
+            <item>Now Works with WordPress (Child Theme)</item>
+        </addition>
+        <fix>
+            <item>Code Cleanup</item>
+        </fix>
+        <remove>
+            <item>Deprecated json code in element code</item>
+        </remove>
+    </changelog>
+    <changelog>
+        <element>plg_dropdown</element>
+        <type>extension</type>
+        <version>1.0.1</version>
+        <date>February 1, 2024</date>
+        <fix>
+            <item>Code Update, Minor Fix</item>
+        </fix>
+        <fix>
+            <item>Code Cleanup</item>
+        </fix>
+        <remove>
+            <item>Deprecated json code in element code</item>
+        </remove>
+    </changelog>
+    <changelog>
+        <element>plg_dropdown</element>
+        <type>extension</type>
+        <version>1.0.0</version>
+        <date>February 25, 2023</date>
+        <addition>
+            <item>Dropdown Element - First Release for YOOtheme Pro</item>
+        </addition>
+    </changelog>
+</changelogs>
