@@ -4,7 +4,7 @@
         <element>plg_spacer</element>
         <type>extension</type>
         <version>1.2.0</version>
-        <date>December 4, 2024</date>
+        <date>December 4, 2025</date>
         <addition>
             <item>Added full support for Joomla 5.4 and Joomla 6</item>
             <item>Added full support for PHP 8.1 through 8.4+</item>
