@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+      <changelog>
+        <element>plg_spacer</element>
+        <type>extension</type>
+        <version>1.2.0</version>
+        <date>December 6, 2025</date>
+        <addition>
+            <item>Added full support for Joomla 5.4 and Joomla 6</item>
+            <item>Added full support for PHP 8.1 through 8.4+</item>
+            <item>Change the forground or background colors of the QR Code</item>
+            <item>Add an image or icon to the center of your QR Code</item>
+        </addition>
+        <fix>
+            <item>Removed deprecated Joomla compatibility code</item>
+            <item>Changed QR Code generation from a CDN to a local library</item>
+        </fix>
+        <remove>
+            <item>Simplified element settings - Settings tab now only shows Visibility option</item>
+        </remove>
+    </changelog>
+    <changelog>
+        <element>plg_qrcode</element>
+        <type>extension</type>
+        <version>1.1.0</version>
+        <date>November 5, 2024</date>
+        <addition>
+            <item>Now Works with WordPress (Child Theme)</item>
+        </addition>
+        <fix>
+            <item>Code Cleanup</item>
+        </fix>
+        <remove>
+            <item>Deprecated json code in element code</item>
+        </remove>
+    </changelog>
+    <changelog>
+        <element>plg_qrcode</element>
+        <type>extension</type>
+        <version>1.0.0</version>
+        <date>February 21, 2024</date>
+        <addition>
+            <item>QR Code Element - First Release for YOOtheme Pro</item>
+        </addition>
+    </changelog>
+</changelogs>
