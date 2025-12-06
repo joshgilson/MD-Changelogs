@@ -8,6 +8,7 @@
         <addition>
             <item>Added full support for Joomla 5.4 and Joomla 6</item>
             <item>Added full support for PHP 8.1 through 8.4+</item>
+            <item>Style additions for the QR Code design</item>
             <item>Change the forground or background colors of the QR Code</item>
             <item>Add an image or icon to the center of your QR Code</item>
         </addition>
