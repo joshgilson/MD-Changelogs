@@ -147,7 +147,7 @@ Security</item>
             <item>If Modal is disabled, the event link can be used when the event is clicked on</item>
         </addition>
         <fix>
-            <item>Reorganized options in the main element view for Display & Modal/Link options</item>
+            <item>Reorganized options in the main element view for Display &amp; Modal/Link options</item>
             <item>Event would disappear when modal options were disabled.</item>
         </fix>
     </changelog>
@@ -178,7 +178,7 @@ Security</item>
             <item>"Start Date" now works as expected</item>
             <item>Print fuction updated and print button only prints calendar now.</item>
             <item>Refactored some code and scripts for better loads</item>
-            <item>Search Bar style fix & better reset reliability</item>
+            <item>Search Bar style fix &amp; better reset reliability</item>
         </fix>
     </changelog>
     <changelog>
