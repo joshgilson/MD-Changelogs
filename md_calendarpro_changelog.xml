@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+    <changelog>
+        <element>plg_calendar_pro</element>
+        <type>extension</type>
+        <version>1.2.0</version>
+        <date>January 6, 2025</date>
+        <addition>
+            <item>Recurring by specific days has been added in per event. NOTE: There is a larger known issue where your event may jump to a day before or a day after your desired day based on your time zone selection. Just choose a different day to offset it, or change the time on your event a few hours one way or another at this time.</item>
+        </addition>
+        <fix>
+            <item>Changed some of the test date, time and time zone text in the modals.</item>
+            <item>Refactored some code and cleaned up a minor time error if no time zone was selected.</item>
+        </fix>
+    </changelog>
+    <changelog>
+        <element>plg_calendar_pro</element>
+        <type>extension</type>
+        <version>1.1.1</version>
+        <date>December 3, 2024</date>
+        <fix>
+            <item>Changed Text Color in each Calendar item to override the default main text color in settings. This only works when a background color is used, like a multi day event or timeline view.</item>
+            <item>Moved "Event Text Color" in Main Calendar Pro element settings so you can set a default text color.</item>
+        </fix>
+    </changelog>
+    <changelog>
+        <element>plg_calendar_pro</element>
+        <type>extension</type>
+        <version>1.1.0</version>
+        <date>December 1, 2024</date>
+        <fix>
+            <item>Added a "Show Past Events" option to force all events in the past dates to show.</item>
+        </fix>
+    </changelog>
+    <changelog>
+        <element>plg_calendar_pro</element>
+        <type>extension</type>
+        <version>1.0.8</version>
+        <date>November 25, 2024</date>
+        <addition>
+            <item>Custom End Dates are still available with the optional checkbox that's now added to limit the end date.</item>
+        </addition>
+        <fix>
+            <item>Changed "Limit End Date" to include preset time periods from today's date (i.e. 1 month, 1 year, etc.).</item>
+        </fix>
+    </changelog>
+    <changelog>
+        <element>plg_calendar_pro</element>
+        <type>extension</type>
+        <version>1.0.7</version>
+        <date>November 5, 2024</date>
+        <fix>
+            <item>Minor custom changes and code cleanup to prevent a date bug.</item>
+        </fix>
+    </changelog>
+    <changelog>
+        <element>plg_calendar_pro</element>
+        <type>extension</type>
+        <version>1.0.6</version>
+        <date>October 9, 2024</date>
+        <addition>
+            <item>Included the option to globally hide the date title</item>
+        </addition>
+    </changelog>
+    <changelog>
+        <element>plg_calendar_pro</element>
+        <type>extension</type>
+        <version>1.0.5</version>
+        <date>October 9, 2024</date>
+        <fix>
+            <item>Fixed default "local" time zone to use the user's browser time to avoid errors.</item>
+        </fix>
+    </changelog>
+    <changelog>
+        <element>plg_calendar_pro</element>
+        <type>extension</type>
+        <version>1.0.4</version>
+        <date>October 6, 2024</date>
+        <fix>
+            <item>Fixed date headers showing for future events if maz events were limited</item>
+            <item>Minor code changes and clearup for dates, time zones and max events</item>
+        </fix>
+    </changelog>
+    <changelog>
+        <element>plg_calendar_pro</element>
+        <type>extension</type>
+        <version>1.0.3</version>
+        <date>October 5, 2024</date>
+        <addition>
+            <item>If Modal is disabled, the event link can be used when the event is clicked on</item>
+        </addition>
+        <fix>
+            <item>Reorganized options in the main element view for Display & Modal/Link options</item>
+            <item>Event would disappear when modal options were disabled.</item>
+        </fix>
+    </changelog>
+    <changelog>
+        <element>plg_calendar_pro</element>
+        <type>extension</type>
+        <version>1.0.2</version>
+        <date>October 4, 2024</date>
+        <addition>
+            <item>If loading is needed for more events, a loading icon will now show. This is rare in most setups.</item>
+            <item>Lazy loading for when a lot of events are needing to load at once.</item>
+            <item>"Hide Past Events From Today" as an option for the "Limit Start Date" of events that will always use "today's" date.</item>
+        </addition>
+        <fix>
+            <item>Move some code around to work better with multiple events needing the date/time/timezone, etc.</item>
+        </fix>
+        <remove>
+            <item>Unnecessary code from beta testing</item>
+        </remove>
+    </changelog>
+    <changelog>
+        <element>plg_calendar_pro</element>
+        <type>extension</type>
+        <version>1.0.1</version>
+        <date>October 3, 2024</date>
+        <fix>
+            <item>Fixed update URL</item>
+            <item>"Start Date" now works as expected</item>
+            <item>Print fuction updated and print button only prints calendar now.</item>
+            <item>Refactored some code and scripts for better loads</item>
+            <item>Search Bar style fix & better reset reliability</item>
+        </fix>
+    </changelog>
+    <changelog>
+        <element>plg_calendar_pro</element>
+        <type>extension</type>
+        <version>1.0.0</version>
+        <date>October 2, 2024</date>
+        <addition>
+            <item>Calendar Pro Element - First Release for YOOtheme Pro</item>
+        </addition>
+    </changelog>
+</changelogs>
