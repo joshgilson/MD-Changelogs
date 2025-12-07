@@ -20,8 +20,6 @@
         </fix>
         <remove>
             <item>Removed Joomla 3 support and legacy/deprecated code</item>
-            <item>Removed direct $_POST superglobal usage (now uses Joomla Input class)
-Security</item>
         </remove>
     </changelog>
     <changelog>
