@@ -5,14 +5,24 @@
         <type>extension</type>
         <version>1.4.0</version>
         <date>December 6, 2025</date>
+        <addition>
+            <item>Added Joomla 5.4+ / 6+ and PHP 8.1+ through 8.4+ support</item>
+            <item>Added comprehensive input validation for all date and timezone fields</item>
+            <item>Added fallback values for all calendar settings</item>
+            <item>Added additional user-facing security and prevention methods</item>
+        </addition>
         <fix>
-            <item>Thanks to user Francis Valenzuela for helping update the print code for a better printing/user experience.</item>
-            <item>Minor code revisions and updates.</item>
+            <item>Fixed "Array to string conversion" error that prevented calendar from displaying</item>
+            <item>Fixed JavaScript syntax errors caused by invalid timezone or date values</item>
+            <item>Fixed PHP warnings on undefined properties in PHP 8.x</item>
+            <item>Fixed calendar not rendering when timezone was set to "local"</item>
+            <item>Fixed recurring events not displaying when end date was invalid</item>
         </fix>
-        <fix>
-            <item>htmlspecialchars() removed from content filter so html is rendered correctly. Dynamic content shouldn't be affected by this change. Text editors or raw code can now be edited or updated without issues.</item>
-            <item>Removed Ghosts 🎃Happy Halloween🎃</item>
-        </fix>
+        <remove>
+            <item>Removed Joomla 3 support and legacy/deprecated code</item>
+            <item>Removed direct $_POST superglobal usage (now uses Joomla Input class)
+Security</item>
+        </remove>
     </changelog>
     <changelog>
         <element>plg_calendar_pro</element>
