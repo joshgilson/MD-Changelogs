@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
     <changelog>
-        <element>plg_calendar-pro</element>
+        <element>md_calendar_pro</element>
         <type>extension</type>
         <version>1.4.0</version>
         <date>December 6, 2025</date>
