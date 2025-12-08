@@ -2,12 +2,30 @@
 <changelogs>
     <changelog>
         <element>com_jreleaser</element>
-        <type>component</type>
+        <type>extension</type>
+        <version>1.1.0</version>
+        <date>December 8, 2025</date>
+        <addition>
+            <item>NOTE: Changes require a new URI and secret from Google!</item>
+            <item>Encrypted credential storage &amp; token storage/Token revocation</item>
+            <item>Rate limiting for test emails, see test email in fixes</item>
+            <item>Client ID visibility toggle</item>
+            <item>Encrypted credential storage &amp; token storage</item>
+        </addition>
+        <fix>
+            <item>Test email recipient - Test emails now send only to the connected Gmail account</item>
+            <item>OAuth state verification - Now uses HMAC-signed state parameter with timing-safe comparison</item>
+            <item>Joomla 5.4+ compatibility - Updated form field signatures for PHP 8.1+ strict typing</item>
+            <item>Deep security fixes and code refactoring for extra security for Joomla, PHP and Google OAuth 2.0</item>
+        </fix>
+    </changelog>
+    <changelog>
+        <element>com_jreleaser</element>
+        <type>extension</type>
         <version>1.0.0</version>
         <date>December 1, 2025</date>
         <addition>
-            <item>Gmail SMTP OAuth 2.0 For Joomla 5/6 - First Release
-</item>
+            <item>Gmail SMTP OAuth 2.0 For Joomla 5/6 - First Release</item>
         </addition>
     </changelog>
 </changelogs>
