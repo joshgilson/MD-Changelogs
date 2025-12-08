@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+    <changelog>
+        <element>plg_ccext_mailchimp</element>
+        <type>extension</type>
+        <version>1.0.0</version>
+        <date>December 1, 2025</date>
+        <addition>
+            <item>CustomCart Extension: mailchimp - First Release</item>
+        </addition>
+    </changelog>
+</changelogs>
