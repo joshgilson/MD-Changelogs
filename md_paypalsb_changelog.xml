@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+    <changelog>
+        <element>plg_paypal_smart_buttons</element>
+        <type>extension</type>
+        <version>1.1.0</version>
+        <date>January 31, 2024</date>
+        <addition>
+            <item>Item now shows in checkout and payment receipt as a line item to identify the purchased item(s)</item>
+            <item>Verfied Joomla 5 install and operation</item>
+        </addition>
+        <fix>
+            <item>Allows symbols, spaces and additional characters to the "Unique ID/Name" field</item>
+        </fix>
+        <remove>
+            <item>Removed obsoleted & old code</item>
+        </remove>
+    </changelog>
+    <changelog>
+        <element>plg_paypal_smart_buttons</element>
+        <type>extension</type>
+        <version>1.0.0</version>
+        <date>February 25, 2023</date>
+        <addition>
+            <item>PayPal Smart Buttons Element - First Release for YOOtheme Pro</item>
+        </addition>
+    </changelog>
+</changelogs>
