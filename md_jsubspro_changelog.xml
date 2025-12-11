@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+    <changelog>
+        <element>com_jsubspro</element>
+        <type>component</type>
+        <version>1.0.0</version>
+        <date>December 11, 2025</date>
+        <addition>
+            <item>JSubs Pro - First Release</item>
+        </addition>
+    </changelog>
+</changelogs>
