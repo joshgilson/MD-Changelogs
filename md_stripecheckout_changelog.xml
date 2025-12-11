@@ -3,13 +3,45 @@
     <changelog>
         <element>plg_stripe_checkout</element>
         <type>extension</type>
+        <version>2.0.0</version>
+        <date>December 11, 2025</date>
+        <addition>
+            <item>Merged AJAX checkout and email webhook into single unified plugin</item>
+            <item>HMAC-SHA256 price signature verification prevents price tampering</item>
+            <item>Session-based rate limiting (10 requests per 60 seconds)</item>
+            <item>Security event logging with IP tracking</item>
+            <item>Webhook signature verification with replay attack protection</item>
+            <item>Installation-specific webhook identifiers</item>
+            <item>Test webhook endpoint for admin debugging</item>
+            <item>Product description and image display in Stripe Checkout</item>
+            <item>Visual indicators for API key status in admin panel</item>
+            <item>Post-install message with direct link to plugin settings</item>
+            <item>Customizable email templates with token replacement</item>
+            <item>Detailed error messages showing which API key is missing</item>
+        </addition>
+        <fix>
+            <item>Full compatibility with Joomla 5.4+ /Joomla 6+ and PHP 8.1+ / PHP 8.4+</item>
+            <item>Secret keys now properly save and persist in plugin settings</item>
+            <item>Fixed JSON parsing errors caused by third-party plugin interference</item>
+            <item>Improved output buffering prevents PHP warnings breaking checkout</item>
+            <item>Timing-safe comparisons prevent timing attacks</item>
+        </fix>
+        <remove>
+            <item>Removed legacy Joomla 3/4 compatibility code</item>
+            <item>Removed separate AJAX plugin (now integrated)</item>
+            <item>Removed separate webhook plugin (now integrated)</item>
+        </remove>
+    </changelog>
+    <changelog>
+        <element>plg_stripe_checkout</element>
+        <type>extension</type>
         <version>1.1.0</version>
         <date>May 23, 2023</date>
         <addition>
             <item>Updated to working with YOOtheme Pro 4</item>
         </addition>
         <fix>
-            <item>Updated Stripe SDK & API to latest version</item>
+            <item>Updated Stripe SDK &amp; API to latest version</item>
         </fix>
     </changelog>
     <changelog>
