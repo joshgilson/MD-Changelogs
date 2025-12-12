@@ -3,6 +3,28 @@
     <changelog>
         <element>com_customcart</element>
         <type>component</type>
+        <version>1.0.4</version>
+        <date>December 11, 2025</date>
+          <addition>
+            <item>Stronger protection against spam and automated attacks</item>
+            <item>Improved security on all cart communications</item>
+            <item>Better validation when editing orders in the admin panel</item>
+            <item>Faster detection when external payment services are slow or unavailable</item>
+          </addition>
+          <fix>
+            <item>Clicking on products in the YOOtheme page builder now works properly</item>
+            <item>Product images with spaces in the filename now display correctly everywhere</item>
+            <item>Color picker options now show the hex color field as expected</item>
+            <item>Resolved a compatibility warning with PHP 8</item>
+            <item>Email template preview now loads more reliably</item>
+          </fix>
+          <remove>
+            <item>Removed outdated code that was causing color picker settings to hide</item>
+          </remove>
+    </changelog>
+    <changelog>
+        <element>com_customcart</element>
+        <type>component</type>
         <version>1.0.3</version>
         <date>December 4, 2025</date>
         <addition>
