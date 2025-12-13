@@ -3,6 +3,32 @@
       <changelog>
         <element>plg_spacer</element>
         <type>extension</type>
+        <version>1.2.1</version>
+        <date>December 13, 2025</date>
+        <addition>
+                <item>New trigger options: fire confetti on button click, URL hash (#confetti), or both</item>
+                <item>Customizable trigger button with text, style, and size options</item>
+        </addition>
+    </changelog>
+     <changelog>
+        <element>plg_spacer</element>
+        <type>extension</type>
+        <version>1.2.0</version>
+        <date>December 11, 2025</date>
+            <addition>
+                <item>Custom CSS field in Advanced tab - use .el-element to style your confetti element</item>
+                <item>Custom HTML attributes support in Advanced tab</item>
+                <item>Party Mode animation style</item>
+            </addition>
+            <fix>
+                <item>Fixed element tracking in YOOtheme builder - element now highlights correctly when selected</item>
+                <item>Improved animation cleanup when switching between styles in the builder</item>
+                <item>Settings and Advanced tabs now work correctly like other YOOtheme elements</item>
+            </fix>
+    </changelog>
+    <changelog>
+        <element>plg_spacer</element>
+        <type>extension</type>
         <version>1.1.0</version>
         <date>November 25, 2025</date>
         <addition>
