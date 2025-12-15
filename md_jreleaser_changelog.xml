@@ -3,6 +3,27 @@
     <changelog>
         <element>com_jreleaser</element>
         <type>component</type>
+        <version>1.0.2</version>
+        <date>December 15, 2025</date>
+        <addition>
+            <item>Full API key viewing in backend - keys are now displayed in full with copy-to-clipboard button</item>
+            <item>Reset functionality for both master and site keys from the backend</item>
+            <item>Filters on API Keys page (key type, user, status, sorting options)</item>
+            <item>Download count sorting option on API Keys page</item>
+        </addition>
+        <fix>
+            <item>Fixed untranslated filter dropdown labels showing raw language constants</item>
+            <item>Fixed download count sorting (was always sorting by date instead of download count)</item>
+            <item>Fixed SQL error "Unknown column r.modified" in download button plugin</item>
+            <item>Fixed user filter dropdown not populating with users</item>
+        </fix>
+        <remove>
+            <item>Removed reference to non-existent modified column from releases query</item>
+        </remove>
+    </changelog>
+    <changelog>
+        <element>com_jreleaser</element>
+        <type>component</type>
         <version>1.0.1</version>
         <date>December 5, 2025</date>
         <addition>
