@@ -3,6 +3,25 @@
     <changelog>
         <element>com_customcart</element>
         <type>component</type>
+        <version>1.0.5</version>
+        <date>December 15, 2025</date>
+          <addition>
+            <item>Emergency webhook logging for easier troubleshooting</item>
+            <item>Better error tracking when processing payments</item>
+          </addition>
+          <fix>
+            <item>Fixed orders not being created when completing checkout</item>
+            <item>Fixed order confirmation emails not sending after payment</item>
+            <item>Fixed compatibility issue with newer Stripe accounts</item>
+            <item>Fixed price formatting in order notification emails</item>
+          </fix>
+          <remove>
+            <item>Removed outdated Stripe API version that caused webhook failures</item>
+          </remove>
+    </changelog>
+    <changelog>
+        <element>com_customcart</element>
+        <type>component</type>
         <version>1.0.4</version>
         <date>December 11, 2025</date>
           <addition>
