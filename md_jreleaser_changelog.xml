@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
+   <changelog>
+        <element>com_jreleaser</element>
+        <type>component</type>
+        <version>1.0.3</version>
+        <date>December 16, 2025</date>
+        <addition>
+            <item>Add {jreleaser logged-in-user="show" copy="show"} shortcode to display user's master API key</item>
+             <item>Add "Allow Guest Downloads" setting in Component Options</item>
+        </addition>
+        <fix>
+             <item>Fix Releases menu routing losing style</item>
+             <item>Fix "Cannot access offset of type array" error on dedicated Releases menu items</item>
+             <item>Fix output="modified" shortcode option (uses release_created since releases are immutable)</item>
+             <item>Fix logged-in-user shortcode not working without product_id</item>
+             <item>Fix API key shortcode styling for better contrast on all themes</item>
+             <item>Fix guest downloads for non-protected products (403 error)</item>
+             <item>Use Route::_() for proper Joomla routing in Products and Releases templates</item>
+        </fix>
+    </changelog>
     <changelog>
         <element>com_jreleaser</element>
         <type>component</type>
