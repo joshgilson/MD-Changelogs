@@ -6,6 +6,21 @@
         <version>1.0.5</version>
         <date>December 15, 2025</date>
           <addition>
+            <item>Updated User-Agent strings for Stripe/EasyPost API calls</item>
+          </addition>
+          <fix>
+            <item>Mobile checkout/clear buttons not working in all situations</item>
+            <item>Double clear cart prompt on mobile</item>
+            <item>Responsive mode terms checkbox - Now checks both modal and offcanvas checkbox variants</item>
+            <item>Cart images too large on mobile - Reduced from 120px to 80px (60px on screens <640px)</item>
+          </fix>
+    </changelog>
+    <changelog>
+        <element>com_customcart</element>
+        <type>component</type>
+        <version>1.0.5</version>
+        <date>December 15, 2025</date>
+          <addition>
             <item>Emergency webhook logging for easier troubleshooting</item>
             <item>Better error tracking when processing payments</item>
           </addition>
