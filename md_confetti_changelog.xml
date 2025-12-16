@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
-      <changelog>
+    <changelog>
+        <element>plg_spacer</element>
+        <type>extension</type>
+        <version>1.2.2</version>
+        <date>December 16, 2025</date>
+        <fix>
+                <item>Added pointer-events: none !important targeting confetti canvases</item>
+                <item>More reliable than CSS alone in Safari to help prevent lingering canvases from blocking clicks</item>
+        </fix>
+    </changelog>
+    <changelog>
         <element>plg_spacer</element>
         <type>extension</type>
         <version>1.2.1</version>
