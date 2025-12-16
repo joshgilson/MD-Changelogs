@@ -4,7 +4,7 @@
         <element>com_customcart</element>
         <type>component</type>
         <version>1.0.6</version>
-        <date>December 15, 2025</date>
+        <date>December 16, 2025</date>
           <addition>
             <item>Updated User-Agent strings for Stripe/EasyPost API calls</item>
           </addition>
