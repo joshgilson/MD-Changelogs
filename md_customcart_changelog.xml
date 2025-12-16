@@ -12,7 +12,7 @@
             <item>Mobile checkout/clear buttons not working in all situations</item>
             <item>Double clear cart prompt on mobile</item>
             <item>Responsive mode terms checkbox - Now checks both modal and offcanvas checkbox variants</item>
-            <item>Cart images too large on mobile - Reduced from 120px to 80px (60px on screens <640px)</item>
+            <item>Cart images too large on mobile - Reduced from 120px to 80px on small screens</item>
           </fix>
     </changelog>
     <changelog>
