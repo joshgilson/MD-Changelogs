@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
+   <changelog>
+        <element>com_customcart</element>
+        <type>component</type>
+        <version>1.0.7</version>
+        <date>December 19, 2025</date>
+          <addition>
+            <item>Media Selector for Email Logo: The email logo setting now uses Joomla's media manager instead of a URL text field. You can browse your media library and select images directly - no more copying and pasting URLs</item>
+          </addition>
+          <fix>
+            <item>CustomCart now properly appears in Joomla's "Update Sites" page (System → Update → Update Sites), allowing you to receive update notifications when new versions are available.</item>
+          </fix>
+    </changelog>
     <changelog>
         <element>com_customcart</element>
         <type>component</type>
