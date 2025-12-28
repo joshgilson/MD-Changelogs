@@ -3,10 +3,26 @@
    <changelog>
         <element>com_jreleaser</element>
         <type>component</type>
+        <version>1.0.4</version>
+        <date>December 27, 2025</date>
+         <fix>
+             <item>CSS framework not inherited when navigating from Products to Releases view</item>
+             <item>Back to Products button not using SEF links with proper Itemid</item>
+             <item>Protected products blocking downloads for logged-in users with valid access levels</item>
+             <item>Joomla access levels not enforced for non-protected product downloads</item>
+         </fix>
+         <addition>
+             <item>product_id option for changelog shortcode to read URL from latest Release record</item>
+             <item>output="releasedate" option for download shortcode</item>
+         </addition>
+    </changelog>
+   <changelog>
+        <element>com_jreleaser</element>
+        <type>component</type>
         <version>1.0.3</version>
         <date>December 16, 2025</date>
         <addition>
-            <item>Add {jreleaser logged-in-user="show" copy="show"} shortcode to display user's master API key</item>
+             <item>Add {jreleaser logged-in-user="show" copy="show"} shortcode to display user's master API key</item>
              <item>Add "Allow Guest Downloads" setting in Component Options</item>
         </addition>
         <fix>
