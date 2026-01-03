@@ -1,5 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
+      <changelog>
+       <element>com_customcart</element>
+       <type>component</type>
+       <version>1.1.0</version>
+       <date>January 2, 2026</date>
+       <addition>
+           <item>Admin dashboard changelog viewer</item>
+           <item>Quick Stats section with date filtering</item>
+           <item>Lifetime order and customer counters</item>
+           <item>Login, Profile, and Register menu items</item>
+           <item>MFA and Passkey authentication support</item>
+           <item>Logout menu item type</item>
+           <item>Guest order linking to accounts</item>
+           <item>Resend Shipping Email action</item>
+           <item>Email logging system</item>
+           <item>Order summary in email templates</item>
+           <item>Custom buttons on profile page</item>
+           <item>Back to Profile button on My Orders</item>
+           <item>Gravatar avatars with initials fallback</item>
+           <item>YOOtheme Pro dynamic content sources</item>
+           <item>Frontend order view layout options</item>
+           <item>Page-specific Turnstile options</item>
+           <item>3,000+ translation strings across 14 languages</item>
+       </addition>
+       <change>
+           <item>Dashboard layout with boxed stats sections</item>
+           <item>MFA uses modal interface</item>
+           <item>Security hardening</item>
+           <item>Full Joomla 5/6 and PHP 8.1+ compatibility</item>
+           <item>Email as username for registration</item>
+           <item>EasyPost status formatting improved</item>
+           <item>Joomla login URLs redirect to CustomCart</item>
+           <item>Frontend toolbar matches backend style</item>
+       </change>
+       <fix>
+           <item>Dashboard stats calculations</item>
+           <item>Order emails not sending</item>
+           <item>Order items missing from orders</item>
+           <item>Order total and discount display</item>
+           <item>Discount row styling consistency</item>
+           <item>Shipping label price discrepancy</item>
+           <item>Email shipping address and promo codes</item>
+           <item>MFA modal and passkey handling</item>
+           <item>EasyPost webhook status updates</item>
+           <item>HTML content in YOOtheme elements</item>
+           <item>Language file duplicates and missing keys</item>
+           <item>Minor CSRF and security vulnerabilities</item>
+       </fix>
+   </changelog>
    <changelog>
         <element>com_customcart</element>
         <type>component</type>
