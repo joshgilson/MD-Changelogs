@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
+   <changelog>
+        <element>com_customcart</element>
+        <type>component</type>
+        <version>1.1.1</version>
+        <date>January 8, 2026</date>
+          <addition>
+            <item>Edit Order Summary: Admins can now manually edit shipping, tax, and discount amounts on orders</item>
+            <item>Edit Order Summary: Available in both backend admin and frontend admin orders views</item>
+            <item>Edit Order Summary: Enable via CustomCart Options → "Allow Order Summary Editing"</item>
+            <item>Edit Order Summary: All changes logged to order history</item>
+          </addition>
+          <fix>
+            <item>Order total calculation now correctly includes tip and discount amounts</item>
+            <item>Order items not being saved to database after Stripe checkout</item>
+            <item>Customer and admin email notifications not including order details</item>
+            <item>Added fallback mechanism for retrieving line items from Stripe API</item>
+            <item>Stripe API version to 2025-12-15.clover (latest)</item>
+          </fix>
+    </changelog>
       <changelog>
        <element>com_customcart</element>
        <type>component</type>
