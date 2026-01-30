@@ -3,6 +3,18 @@
    <changelog>
         <element>com_customcart</element>
         <type>component</type>
+        <version>1.1.2</version>
+        <date>January 30, 2026</date>
+          <fix>
+             <item>Resolved an issue where order items would show "no items" in emails, order status pages, and admin views, even though the items appeared correctly in Stripe</item>
+             <item>Improved the reliability of fetching order details from Stripe during checkout completion</item>
+             <item>Images added in YOOtheme Pro builder now display correctly in the shopping cart</item>
+             <item>Order confirmation emails now correctly display product images when using relative paths</item>
+          </fix>
+    </changelog>
+   <changelog>
+        <element>com_customcart</element>
+        <type>component</type>
         <version>1.1.1</version>
         <date>January 8, 2026</date>
           <addition>
