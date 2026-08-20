@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
    <changelog>
+    <element>com_customcart</element>
+    <type>component</type>
+    <version>1.2.0</version>
+    <date>August 20, 2026</date>
+    <addition>
+        <item>Send Invoice: Create draft or manual orders and email the customer a secure Stripe payment link, with a custom message, invoice history tracking, and the ability to resend with a fresh link.</item>
+        <item>Pay Now button on the customer order page for unpaid invoiced orders.</item>
+        <item>Payment link management: Disable a previously sent payment link so it can no longer be used.</item>
+        <item>Invoices now support discounts, and manual orders can auto-calculate tax with a configurable rate and taxable states list.</item>
+        <item>Multiple shipping labels per order: Create, download, track, and delete separate labels for split shipments, reprints, or reships.</item>
+        <item>Print status tracking: A checkbox on each order line item cycles through printing in process (yellow), completed (green), and issue (red) — saved per item, with an option to disable the feature in settings.</item>
+        <item>Private admin notes on each order line item with autosave — visible only to admins, never to customers.</item>
+        <item>Partial refunds: Issue full or partial Stripe refunds from a new refund modal (permission-controlled), tracked in the order notes, order history, and payment status.</item>
+        <item>Refund amounts and net payment now display in the Order Summary.</item>
+        <item>File uploads on order item options: Attach art files (images, ZIP, PDF, AI, and more) to any line item option, with inline image previews.</item>
+        <item>Image picker on Create Order and order item rows for quickly assigning product images.</item>
+        <item>Unavailable state for product field options, including crossed-out color swatches and an optional tooltip.</item>
+        <item>Quick filter toggles on the orders list (All, Not Paid, Not Shipped, Not Completed).</item>
+        <item>Login Takeover setting (disabled by default): CustomCart only replaces Joomla's login pages when explicitly enabled. CustomCart login menu items always work when visited directly.</item>
+        <item>The CustomCart login page now uses your Brand Colors settings and displays the user's Gravatar when available.</item>
+        <item>The Webhook Configuration panel in Options now shows your site's actual webhook URL with a copy button, the full list of Stripe events to listen for, and the recommended API version.</item>
+    </addition>
+    <change>
+        <item>Upgraded the Stripe API to version 2026-07-29.dahlia across all payment, refund, and checkout calls.</item>
+        <item>Print status and private item notes are also available in the front-end admin orders view.</item>
+        <item>Joomla multi-factor authentication pages keep their native design unless Login Takeover is enabled.</item>
+        <item>Added CSRF protection to the login, logout, and password reset forms, and excluded login/logout pages from page caches (JCH Optimize and LiteSpeed safe).</item>
+        <item>Translated all new features and previously untranslated strings across all 16 supported languages, including the permission names shown in the Permissions tab.</item>
+    </change>
+    <fix>
+        <item>Fixed checkout failing on large orders with many different products (Stripe metadata limit) — big carts now check out normally with all product options preserved.</item>
+        <item>Fixed duplicate order numbers that could occur after upgrading the plugin.</item>
+        <item>Fixed a fatal error after a customer paid an invoice, and the "Order Not Found" page shown after successful invoice payments.</item>
+        <item>Invoice payments are now confirmed directly with Stripe when the customer returns to the site, so orders are marked paid even if the webhook is delayed.</item>
+        <item>Fixed a Stripe error that delayed webhook processing on invoice payments with discounts.</item>
+        <item>Fixed the Joomla login module and two-factor authentication being broken by the login redirect — login form submissions and logout links are never intercepted.</item>
+        <item>Fixed logout links redirecting to a redundant page, and guarded against logout redirect loops.</item>
+        <item>Customer-uploaded images on order options now preview inline instead of downloading when clicked.</item>
+        <item>Fixed the refund window not opening on paid orders.</item>
+        <item>Fixed invisible text in the Send Invoice From field in dark mode.</item>
+        <item>Fixed a shipping label error on the customer order page.</item>
+    </fix>
+</changelog>
+   <changelog>
         <element>com_customcart</element>
         <type>component</type>
         <version>1.1.2</version>
