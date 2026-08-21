@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
+      <changelog>
+        <element>com_jreleaser</element>
+        <type>component</type>
+        <version>1.1.0</version>
+        <date>August 21, 2026</date>
+        <security>
+            <item>Quick Upload now validates its security token before accepting a package</item>
+            <item>Uploaded filenames containing a second extension (such as .php.zip) are now rejected</item>
+            <item>Release storage folder is now protected on Apache 2.4, nginx and IIS</item>
+        </security>
+        <fix>
+            <item>Release edit screen: uploading a replacement ZIP failed with "File not uploaded for security reasons!" on Joomla 6, and saved without the file on Joomla 5</item>
+            <item>Update XML used an incorrect extension element, so client sites were never offered updates</item>
+            <item>Download button plugin was installed disabled instead of enabled</item>
+            <item>Uninstalling the component deleted all uploaded release packages</item>
+            <item>Replacing a package no longer removes the existing file until the new upload succeeds</item>
+            <item>Downloads for a release with no package file returned an empty, broken file</item>
+            <item>Changelog shortcode failed when a feed contained no entries</item>
+            <item>Admin language file was installed into the site language folder</item>
+        </fix>
+        <addition>
+            <item>Verified compatibility with Joomla 5 and Joomla 6 on PHP 8.1 through 8.4</item>
+            <item>Installing on an unsupported database now reports a clear error instead of completing with no tables</item>
+        </addition>
+        <note>
+            <item>If any product was created through Quick Upload before this version, check its Element field on the Products page - earlier versions could save an incorrect value that stops updates reaching your customers</item>
+        </note>
+    </changelog>
    <changelog>
         <element>com_jreleaser</element>
         <type>component</type>
