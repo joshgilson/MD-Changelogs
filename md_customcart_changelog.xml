@@ -1,264 +1,331 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
-       <changelog>
-        <element>com_customcart</element>
-        <type>component</type>
-        <version>1.4.0</version>
-        <date>September 6, 2026</date>
-          <addition>
-            <item>New Additions</item>
-          </addition>
-    </changelog>
-    <changelog>
-        <element>com_customcart</element>
-        <type>component</type>
-        <version>1.3.0</version>
-        <date>September 1, 2026</date>
-          <addition>
-            <item>Internal Release Only</item>
-          </addition>
-    </changelog>
-   <changelog>
-    <element>com_customcart</element>
-    <type>component</type>
-    <version>1.2.0</version>
-    <date>August 20, 2026</date>
-    <addition>
-        <item>Send Invoice: Create draft or manual orders and email the customer a secure Stripe payment link, with a custom message, invoice history tracking, and the ability to resend with a fresh link.</item>
-        <item>Pay Now button on the customer order page for unpaid invoiced orders.</item>
-        <item>Payment link management: Disable a previously sent payment link so it can no longer be used.</item>
-        <item>Invoices now support discounts, and manual orders can auto-calculate tax with a configurable rate and taxable states list.</item>
-        <item>Multiple shipping labels per order: Create, download, track, and delete separate labels for split shipments, reprints, or reships.</item>
-        <item>Print status tracking: A checkbox on each order line item cycles through printing in process (yellow), completed (green), and issue (red) — saved per item, with an option to disable the feature in settings.</item>
-        <item>Private admin notes on each order line item with autosave — visible only to admins, never to customers.</item>
-        <item>Partial refunds: Issue full or partial Stripe refunds from a new refund modal (permission-controlled), tracked in the order notes, order history, and payment status.</item>
-        <item>Refund amounts and net payment now display in the Order Summary.</item>
-        <item>File uploads on order item options: Attach art files (images, ZIP, PDF, AI, and more) to any line item option, with inline image previews.</item>
-        <item>Image picker on Create Order and order item rows for quickly assigning product images.</item>
-        <item>Unavailable state for product field options, including crossed-out color swatches and an optional tooltip.</item>
-        <item>Quick filter toggles on the orders list (All, Not Paid, Not Shipped, Not Completed).</item>
-        <item>Login Takeover setting (disabled by default): CustomCart only replaces Joomla's login pages when explicitly enabled. CustomCart login menu items always work when visited directly.</item>
-        <item>The CustomCart login page now uses your Brand Colors settings and displays the user's Gravatar when available.</item>
-        <item>The Webhook Configuration panel in Options now shows your site's actual webhook URL with a copy button, the full list of Stripe events to listen for, and the recommended API version.</item>
-    </addition>
-    <change>
-        <item>Upgraded the Stripe API to version 2026-07-29.dahlia across all payment, refund, and checkout calls.</item>
-        <item>Print status and private item notes are also available in the front-end admin orders view.</item>
-        <item>Joomla multi-factor authentication pages keep their native design unless Login Takeover is enabled.</item>
-        <item>Added CSRF protection to the login, logout, and password reset forms, and excluded login/logout pages from page caches (JCH Optimize and LiteSpeed safe).</item>
-        <item>Translated all new features and previously untranslated strings across all 16 supported languages, including the permission names shown in the Permissions tab.</item>
-    </change>
-    <fix>
-        <item>Fixed checkout failing on large orders with many different products (Stripe metadata limit) — big carts now check out normally with all product options preserved.</item>
-        <item>Fixed duplicate order numbers that could occur after upgrading the plugin.</item>
-        <item>Fixed a fatal error after a customer paid an invoice, and the "Order Not Found" page shown after successful invoice payments.</item>
-        <item>Invoice payments are now confirmed directly with Stripe when the customer returns to the site, so orders are marked paid even if the webhook is delayed.</item>
-        <item>Fixed a Stripe error that delayed webhook processing on invoice payments with discounts.</item>
-        <item>Fixed the Joomla login module and two-factor authentication being broken by the login redirect — login form submissions and logout links are never intercepted.</item>
-        <item>Fixed logout links redirecting to a redundant page, and guarded against logout redirect loops.</item>
-        <item>Customer-uploaded images on order options now preview inline instead of downloading when clicked.</item>
-        <item>Fixed the refund window not opening on paid orders.</item>
-        <item>Fixed invisible text in the Send Invoice From field in dark mode.</item>
-        <item>Fixed a shipping label error on the customer order page.</item>
-    </fix>
-</changelog>
-   <changelog>
-        <element>com_customcart</element>
-        <type>component</type>
-        <version>1.1.2</version>
-        <date>January 30, 2026</date>
-          <fix>
-             <item>Resolved an issue where order items would show "no items" in emails, order status pages, and admin views, even though the items appeared correctly in Stripe</item>
-             <item>Improved the reliability of fetching order details from Stripe during checkout completion</item>
-             <item>Images added in YOOtheme Pro builder now display correctly in the shopping cart</item>
-             <item>Order confirmation emails now correctly display product images when using relative paths</item>
-          </fix>
-    </changelog>
-   <changelog>
-        <element>com_customcart</element>
-        <type>component</type>
-        <version>1.1.1</version>
-        <date>January 8, 2026</date>
-          <addition>
-            <item>Edit Order Summary: Admins can now manually edit shipping, tax, and discount amounts on orders</item>
-            <item>Edit Order Summary: Available in both backend admin and frontend admin orders views</item>
-            <item>Edit Order Summary: Enable via CustomCart Options → "Allow Order Summary Editing"</item>
-            <item>Edit Order Summary: All changes logged to order history</item>
-          </addition>
-          <fix>
-            <item>Order total calculation now correctly includes tip and discount amounts</item>
-            <item>Order items not being saved to database after Stripe checkout</item>
-            <item>Customer and admin email notifications not including order details</item>
-            <item>Added fallback mechanism for retrieving line items from Stripe API</item>
-            <item>Stripe API version to 2025-12-15.clover (latest)</item>
-          </fix>
-    </changelog>
-      <changelog>
-       <element>com_customcart</element>
-       <type>component</type>
-       <version>1.1.0</version>
-       <date>January 2, 2026</date>
-       <addition>
-           <item>Admin dashboard changelog viewer</item>
-           <item>Quick Stats section with date filtering</item>
-           <item>Lifetime order and customer counters</item>
-           <item>Login, Profile, and Register menu items</item>
-           <item>MFA and Passkey authentication support</item>
-           <item>Logout menu item type</item>
-           <item>Guest order linking to accounts</item>
-           <item>Resend Shipping Email action</item>
-           <item>Email logging system</item>
-           <item>Order summary in email templates</item>
-           <item>Custom buttons on profile page</item>
-           <item>Back to Profile button on My Orders</item>
-           <item>Gravatar avatars with initials fallback</item>
-           <item>YOOtheme Pro dynamic content sources</item>
-           <item>Frontend order view layout options</item>
-           <item>Page-specific Turnstile options</item>
-           <item>3,000+ translation strings across 14 languages</item>
-       </addition>
-       <change>
-           <item>Dashboard layout with boxed stats sections</item>
-           <item>MFA uses modal interface</item>
-           <item>Security hardening</item>
-           <item>Full Joomla 5/6 and PHP 8.1+ compatibility</item>
-           <item>Email as username for registration</item>
-           <item>EasyPost status formatting improved</item>
-           <item>Joomla login URLs redirect to CustomCart</item>
-           <item>Frontend toolbar matches backend style</item>
-       </change>
-       <fix>
-           <item>Dashboard stats calculations</item>
-           <item>Order emails not sending</item>
-           <item>Order items missing from orders</item>
-           <item>Order total and discount display</item>
-           <item>Discount row styling consistency</item>
-           <item>Shipping label price discrepancy</item>
-           <item>Email shipping address and promo codes</item>
-           <item>MFA modal and passkey handling</item>
-           <item>EasyPost webhook status updates</item>
-           <item>HTML content in YOOtheme elements</item>
-           <item>Language file duplicates and missing keys</item>
-           <item>Minor CSRF and security vulnerabilities</item>
-       </fix>
-   </changelog>
-   <changelog>
-        <element>com_customcart</element>
-        <type>component</type>
-        <version>1.0.7</version>
-        <date>December 19, 2025</date>
-          <addition>
-            <item>Media Selector for Email Logo: The email logo setting now uses Joomla's media manager instead of a URL text field. You can browse your media library and select images directly - no more copying and pasting URLs</item>
-          </addition>
-          <fix>
-            <item>CustomCart now properly appears in Joomla's "Update Sites" page (System → Update → Update Sites), allowing you to receive update notifications when new versions are available.</item>
-          </fix>
-    </changelog>
-    <changelog>
-        <element>com_customcart</element>
-        <type>component</type>
-        <version>1.0.6</version>
-        <date>December 16, 2025</date>
-          <addition>
-            <item>Updated User-Agent strings for Stripe/EasyPost API calls</item>
-          </addition>
-          <fix>
-            <item>Mobile checkout/clear buttons not working in all situations</item>
-            <item>Double clear cart prompt on mobile</item>
-            <item>Responsive mode terms checkbox - Now checks both modal and offcanvas checkbox variants</item>
-            <item>Cart images too large on mobile - Reduced from 120px to 80px on small screens</item>
-          </fix>
-    </changelog>
-    <changelog>
-        <element>com_customcart</element>
-        <type>component</type>
-        <version>1.0.5</version>
-        <date>December 15, 2025</date>
-          <addition>
-            <item>Emergency webhook logging for easier troubleshooting</item>
-            <item>Better error tracking when processing payments</item>
-          </addition>
-          <fix>
-            <item>Fixed orders not being created when completing checkout</item>
-            <item>Fixed order confirmation emails not sending after payment</item>
-            <item>Fixed compatibility issue with newer Stripe accounts</item>
-            <item>Fixed price formatting in order notification emails</item>
-          </fix>
-          <remove>
-            <item>Removed outdated Stripe API version that caused webhook failures</item>
-          </remove>
-    </changelog>
-    <changelog>
-        <element>com_customcart</element>
-        <type>component</type>
-        <version>1.0.4</version>
-        <date>December 11, 2025</date>
-          <addition>
-            <item>Stronger protection against spam and automated attacks</item>
-            <item>Improved security on all cart communications</item>
-            <item>Better validation when editing orders in the admin panel</item>
-            <item>Faster detection when external payment services are slow or unavailable</item>
-          </addition>
-          <fix>
-            <item>Clicking on products in the YOOtheme page builder now works properly</item>
-            <item>Product images with spaces in the filename now display correctly everywhere</item>
-            <item>Color picker options now show the hex color field as expected</item>
-            <item>Resolved a compatibility warning with PHP 8</item>
-            <item>Email template preview now loads more reliably</item>
-          </fix>
-          <remove>
-            <item>Removed outdated code that was causing color picker settings to hide</item>
-          </remove>
-    </changelog>
-    <changelog>
-        <element>com_customcart</element>
-        <type>component</type>
-        <version>1.0.3</version>
-        <date>December 4, 2025</date>
-        <addition>
-            <item>Introducing Carto - the CustomCart AI Assistant in the back-end of CustomCart</item>
-        </addition>
-        <fix>
-            <item>Updated CC Product Element image and panel settings with more options and better layout</item>
-            <item>Updated cart fulfillment layout and shipping prices</item>
-        </fix>
-    </changelog>
-    <changelog>
-        <element>com_customcart</element>
-        <type>component</type>
-        <version>1.0.2</version>
-        <date>December 3, 2025</date>
-        <fix>
-            <item>Image Placement setting now correctly hidden when using 2 or 3 column layouts</item>
-            <item>Height Expand panel setting now properly fills available column space</item>
-            <item>Box Shadow &amp; Box Decoration no longer get cut off by container margins</item>
-            <item>Pricing Tiers now correctly disable quantity controls in the cart</item>
-            <item>Dropdown order options now display in correct order (1st, 2nd, 3rd, 4th, 5th)</item>
-        </fix>
-        <change>
-            <item>Added uk-form-small styling to all cart fulfillment dropdowns</item>
-        </change>
-    </changelog>
-    <changelog>
-        <element>com_customcart</element>
-        <type>component</type>
-        <version>1.0.1</version>
-        <date>December 2, 2025</date>
-        <change>
-            <item>Additional language strings added and translated for the front-end and back-end</item>
-        </change>
-        <addition>
-            <item>Cache refresh function when a language is changed</item>
-            <item>Option to change the alert box style on the cart when additional shipping methods are used</item>
-        </addition>
-    </changelog>
-    <changelog>
-        <element>com_customcart</element>
-        <type>component</type>
-        <version>1.0.0</version>
-        <date>December 1, 2025</date>
-        <addition>
-            <item>CustomCart - First Release</item>
-        </addition>
-    </changelog>
+	<changelog>
+		<element>com_customcart</element>
+		<type>component</type>
+		<version>1.4.0</version>
+		<date>September 5, 2026</date>
+		<addition>
+			<item>Refund sync with Stripe: refunds you issue in the Stripe Dashboard now flow back into the order automatically — the refunded amount, payment status, order status and order history all update on their own. A refund that fails or is reversed at Stripe puts the order back to Paid.</item>
+			<item>Chargeback alerts: if a customer disputes a payment, the order shows a red "Disputed" tag in every staff order list (never on customer pages) and a Dispute card with the disputed amount, reason, status, evidence deadline with a day countdown, and a button that opens the dispute in Stripe. You are emailed when a dispute opens and again when it is won or lost.</item>
+			<item>Evidence Pack: a printable, self-contained record of the order for submitting to Stripe — dispute details, customer and addresses, items with options and uploaded files, amounts and payments, fulfillment, carrier, tracking and delivery status, checkout agreement, the captured digital signature and the full order history.</item>
+			<item>New "Send Dispute Alerts (Admins)" setting on the Emails tab, on by default.</item>
+			<item>Seven new Stripe webhook events to add for refund and dispute tracking. The list is shown in Settings, the Setup wizard and WEBHOOK_SETUP.md. Nothing changes until you add them in Stripe.</item>
+			<item>The digital signature pad now works on the full-page cart, so customers can complete checkout from that page.</item>
+			<item>All 52 new text strings are translated into the 14 bundled languages.</item>
+		</addition>
+		<change>
+			<item>Prices are now set by the server. Item prices, option prices, quantity tiers and quantity limits are verified and recalculated on the server at checkout, so a shopper can no longer change a price in their browser or pass off an expensive option as a cheap one.</item>
+			<item>The front-end Admin Orders page now requires Manager, Administrator or Super User when no user group is set on the menu item. Previously any logged-in user could view every order.</item>
+			<item>Running more than one store on the same Stripe account now works automatically — each store stamps its own checkouts, so orders can no longer cross over between sites.</item>
+			<item>Admin refunds and Stripe refunds now follow the same rules: same statuses, same history entries, and open payment links are voided on a full refund.</item>
+			<item>Backups no longer contain your Stripe, Turnstile, Carto, Google Sheets or download ID secrets, and admin logs moved out of publicly reachable folders.</item>
+			<item>Updated to Stripe API version 2026-08-26.dahlia, with support for delayed payment methods and large orders.</item>
+			<item>EasyPost updated: current package list, stricter address verification, automatic retry when rate requests are throttled, and clearer error messages.</item>
+			<item>Google and Mailchimp connections hardened, including a reconnect notice if Google revokes access and more accurate marketing opt-in.</item>
+			<item>Now requires Joomla 5.4 or newer, and is compatible with Joomla 6 and PHP 8.5.</item>
+			<item>Wording and consistency pass across every setting, email and document. "Local Dropoff" settings are now labelled "Local Delivery" to match what customers see.</item>
+			<item>Database update 2.9.8 adds refund and dispute tracking, and repairs itself automatically on sites where the update did not run.</item>
+		</change>
+		<fix>
+			<item>The digital signature is no longer lost when the cart changes, and an old leftover signature no longer blocks checkout.</item>
+			<item>In responsive display mode, the mobile cart now shows pickup and delivery details and has a working signature pad. Choices made in one view carry over to the other.</item>
+			<item>The full-page cart's pickup and delivery date/time picker and location list now work the same as the modal cart.</item>
+			<item>Tips are no longer counted in the order subtotal, so subtotal plus shipping, tax and tip minus discount equals the total again.</item>
+			<item>Restoring a backup no longer wipes your orders. Restore is now all-or-nothing and includes payment history and shipping label history.</item>
+			<item>Opening a shared order link no longer empties the visitor's shopping cart.</item>
+			<item>Confirmation emails sent from the front-end admin page now include items, statuses, store details and the real shipping status.</item>
+			<item>Shipping labels created and orders deleted from the front-end admin page now behave the same as in the backend, including label history and voiding open payment links.</item>
+			<item>The "send customer email" and "send admin email" switches are now honored for payment received emails.</item>
+			<item>Shipping notification emails no longer show blank item names and zero prices.</item>
+			<item>The customer order page no longer shows the raw {customcart_full_customer_layout} text when shortcodes are turned off in Settings.</item>
+			<item>Front-end account and full-page cart pages now show your configured currency instead of always showing a dollar sign.</item>
+			<item>Opening a deleted or missing order in the admin now shows "Order not found" instead of an error page.</item>
+			<item>Saving or resetting email templates no longer fails with an error.</item>
+			<item>Marketing consent from Stripe is recorded correctly, so customers are no longer all marked as opted in, and accepting terms is no longer treated as a newsletter signup.</item>
+			<item>Stores connected to Google Sheets no longer receive every order twice.</item>
+			<item>Several Stripe checkout errors fixed, including a tax rate conflict, the cancel return with "empty cart on cancel", and the order data used by search engines.</item>
+			<item>Product element: hidden fields are no longer added to the cart, pricing tiers only apply when the tier switch is on, and minimum quantity is enforced at checkout instead of only on the page.</item>
+			<item>Uninstalling now removes every CustomCart table, and upgrades no longer fail on MySQL 8.</item>
+			<item>Fresh installs now include the Carto prompt file and the default customer email template.</item>
+			<item>Customer-supplied text is escaped everywhere it is displayed, and CSV and Excel exports are protected against spreadsheet formula injection.</item>
+		</fix>
+	</changelog>
+	<changelog>
+		<element>com_customcart</element>
+		<type>component</type>
+		<version>1.3.0</version>
+		<date>September 4, 2026</date>
+		<addition>
+			<item>Request Payment: add items or change shipping, tax or discount on an order that has already been paid, then email the customer a secure Stripe link for only the outstanding balance. The payment attaches to the same order and the order returns to Paid automatically.</item>
+			<item>Payment ledger: every payment on an order is now recorded — the original checkout, invoices, balance requests and manual "marked as paid" entries — with the amount, date and status. Existing paid orders are filled in automatically on update.</item>
+			<item>New "Partially Paid" payment status (amber). A paid order whose total grows after an edit shows Paid and Balance Due lines, and flips back if you undo the change.</item>
+			<item>Order lists and the dashboard show a "Balance Due $X" tag under the total while money is owed.</item>
+			<item>The customer order page shows Paid and Balance Due, a "Pay Balance" button while a request is open, and a payment history once more than one payment has been made.</item>
+			<item>Payment Received emails: a customer receipt with a View Order button, plus a store notice, sent for balance payments instead of a duplicate order confirmation.</item>
+			<item>Open payment links are voided automatically when an order is marked paid by hand, fully refunded, or edited so the balance changes, so a customer can never pay an outdated amount.</item>
+			<item>Random order numbers: new Order Number Format setting (Sequential or Random) with a code length of 5 to 12 characters. Random numbers look like UVM-7K3Q9D, skip look-alike characters, and are checked against existing orders. Existing orders keep their numbers and switching back to Sequential is safe.</item>
+			<item>My Packages: define your own mailers and boxes with a name, dimensions and optional empty weight. They appear at the top of the label wizard with the dimensions already filled in.</item>
+			<item>Hide carrier packages you never use, and set a Default Package that is pre-selected whenever the label wizard opens.</item>
+			<item>Weight helper in both label wizards: the weight field accepts decimals, is pre-filled from your default weight, and shows a live reference in pounds, ounces and kilograms. A preset's empty package weight is added for you, and the order's items are listed on the weight step.</item>
+			<item>All 45 new text strings are translated in every bundled language.</item>
+		</addition>
+		<change>
+			<item>Order lists everywhere now show the amount after refunds — backend orders, front-end admin orders and cards, dashboard, admin module and the customer's account views — with the original total struck through and a red Refunded or Partially Refunded tag. Orders without refunds look exactly as before.</item>
+			<item>Both label wizards now share one package list, and the front-end wizard uses the same grouped dropdown as the backend instead of fixed Letter, Flat and Parcel buttons.</item>
+			<item>Removed the artificial delay when opening the shipping label wizard.</item>
+			<item>Refunds are now allowed on partially paid orders, and "Full refund" means everything the customer paid across all payments.</item>
+		</change>
+		<fix>
+			<item>Fixed checkout failing with a "URL must be 2048 characters or less" error on products that use a generated preview image. Previews are now saved to your site and the customer still sees them at checkout and on the order.</item>
+			<item>A used invoice or balance payment link is cleared from the order once the payment completes, so it is no longer offered on the order pages.</item>
+			<item>A repeated Stripe notification can no longer create a duplicate order, revive a refunded order, or reset a partially refunded order's payment status.</item>
+			<item>Orders created manually and later paid through an invoice link now store the real Stripe payment ID, which is needed for refunds.</item>
+			<item>Discount errors while creating an invoice link are now reported instead of silently sending a link without the discount.</item>
+			<item>Fixed the Total column styling on the front-end admin orders list.</item>
+		</fix>
+	</changelog>
+	<changelog>
+		<element>com_customcart</element>
+		<type>component</type>
+		<version>1.2.0</version>
+		<date>August 20, 2026</date>
+		<addition>
+			<item>Send Invoice: Create draft or manual orders and email the customer a secure Stripe payment link, with a custom message, invoice history tracking, and the ability to resend with a fresh link.</item>
+			<item>Pay Now button on the customer order page for unpaid invoiced orders.</item>
+			<item>Payment link management: Disable a previously sent payment link so it can no longer be used.</item>
+			<item>Invoices now support discounts, and manual orders can auto-calculate tax with a configurable rate and taxable states list.</item>
+			<item>Multiple shipping labels per order: Create, download, track, and delete separate labels for split shipments, reprints, or reships.</item>
+			<item>Print status tracking: A checkbox on each order line item cycles through printing in process (yellow), completed (green), and issue (red) — saved per item, with an option to disable the feature in settings.</item>
+			<item>Private admin notes on each order line item with autosave — visible only to admins, never to customers.</item>
+			<item>Partial refunds: Issue full or partial Stripe refunds from a new refund modal (permission-controlled), tracked in the order notes, order history, and payment status.</item>
+			<item>Refund amounts and net payment now display in the Order Summary.</item>
+			<item>File uploads on order item options: Attach art files (images, ZIP, PDF, AI, and more) to any line item option, with inline image previews.</item>
+			<item>Image picker on Create Order and order item rows for quickly assigning product images.</item>
+			<item>Unavailable state for product field options, including crossed-out color swatches and an optional tooltip.</item>
+			<item>Quick filter toggles on the orders list (All, Not Paid, Not Shipped, Not Completed).</item>
+			<item>Login Takeover setting (disabled by default): CustomCart only replaces Joomla's login pages when explicitly enabled. CustomCart login menu items always work when visited directly.</item>
+			<item>The CustomCart login page now uses your Brand Colors settings and displays the user's Gravatar when available.</item>
+			<item>The Webhook Configuration panel in Options now shows your site's actual webhook URL with a copy button, the full list of Stripe events to listen for, and the recommended API version.</item>
+		</addition>
+		<change>
+			<item>Upgraded the Stripe API to version 2026-07-29.dahlia across all payment, refund, and checkout calls.</item>
+			<item>Print status and private item notes are also available in the front-end admin orders view.</item>
+			<item>Joomla multi-factor authentication pages keep their native design unless Login Takeover is enabled.</item>
+			<item>Added CSRF protection to the login, logout, and password reset forms, and excluded login/logout pages from page caches (JCH Optimize and LiteSpeed safe).</item>
+			<item>Translated all new features and previously untranslated strings across all 16 supported languages, including the permission names shown in the Permissions tab.</item>
+		</change>
+		<fix>
+			<item>Fixed checkout failing on large orders with many different products (Stripe metadata limit) — big carts now check out normally with all product options preserved.</item>
+			<item>Fixed duplicate order numbers that could occur after upgrading the plugin.</item>
+			<item>Fixed a fatal error after a customer paid an invoice, and the "Order Not Found" page shown after successful invoice payments.</item>
+			<item>Invoice payments are now confirmed directly with Stripe when the customer returns to the site, so orders are marked paid even if the webhook is delayed.</item>
+			<item>Fixed a Stripe error that delayed webhook processing on invoice payments with discounts.</item>
+			<item>Fixed the Joomla login module and two-factor authentication being broken by the login redirect — login form submissions and logout links are never intercepted.</item>
+			<item>Fixed logout links redirecting to a redundant page, and guarded against logout redirect loops.</item>
+			<item>Customer-uploaded images on order options now preview inline instead of downloading when clicked.</item>
+			<item>Fixed the refund window not opening on paid orders.</item>
+			<item>Fixed invisible text in the Send Invoice From field in dark mode.</item>
+			<item>Fixed a shipping label error on the customer order page.</item>
+		</fix>
+	</changelog>
+	<changelog>
+		<element>com_customcart</element>
+		<type>component</type>
+		<version>1.1.2</version>
+		<date>January 30, 2026</date>
+		<fix>
+			<item>Resolved an issue where order items would show "no items" in emails, order status pages, and admin views, even though the items appeared correctly in Stripe</item>
+			<item>Improved the reliability of fetching order details from Stripe during checkout completion</item>
+			<item>Images added in YOOtheme Pro builder now display correctly in the shopping cart</item>
+			<item>Order confirmation emails now correctly display product images when using relative paths</item>
+		</fix>
+	</changelog>
+	<changelog>
+		<element>com_customcart</element>
+		<type>component</type>
+		<version>1.1.1</version>
+		<date>January 8, 2026</date>
+		<addition>
+			<item>Edit Order Summary: Admins can now manually edit shipping, tax, and discount amounts on orders</item>
+			<item>Edit Order Summary: Available in both backend admin and frontend admin orders views</item>
+			<item>Edit Order Summary: Enable via CustomCart Options → "Allow Order Summary Editing"</item>
+			<item>Edit Order Summary: All changes logged to order history</item>
+		</addition>
+		<fix>
+			<item>Order total calculation now correctly includes tip and discount amounts</item>
+			<item>Order items not being saved to database after Stripe checkout</item>
+			<item>Customer and admin email notifications not including order details</item>
+			<item>Added fallback mechanism for retrieving line items from Stripe API</item>
+			<item>Stripe API version to 2025-12-15.clover (latest)</item>
+		</fix>
+	</changelog>
+	<changelog>
+		<element>com_customcart</element>
+		<type>component</type>
+		<version>1.1.0</version>
+		<date>January 2, 2026</date>
+		<addition>
+			<item>Admin dashboard changelog viewer</item>
+			<item>Quick Stats section with date filtering</item>
+			<item>Lifetime order and customer counters</item>
+			<item>Login, Profile, and Register menu items</item>
+			<item>MFA and Passkey authentication support</item>
+			<item>Logout menu item type</item>
+			<item>Guest order linking to accounts</item>
+			<item>Resend Shipping Email action</item>
+			<item>Email logging system</item>
+			<item>Order summary in email templates</item>
+			<item>Custom buttons on profile page</item>
+			<item>Back to Profile button on My Orders</item>
+			<item>Gravatar avatars with initials fallback</item>
+			<item>YOOtheme Pro dynamic content sources</item>
+			<item>Frontend order view layout options</item>
+			<item>Page-specific Turnstile options</item>
+			<item>3,000+ translation strings across 14 languages</item>
+		</addition>
+		<change>
+			<item>Dashboard layout with boxed stats sections</item>
+			<item>MFA uses modal interface</item>
+			<item>Security hardening</item>
+			<item>Full Joomla 5/6 and PHP 8.1+ compatibility</item>
+			<item>Email as username for registration</item>
+			<item>EasyPost status formatting improved</item>
+			<item>Joomla login URLs redirect to CustomCart</item>
+			<item>Frontend toolbar matches backend style</item>
+		</change>
+		<fix>
+			<item>Dashboard stats calculations</item>
+			<item>Order emails not sending</item>
+			<item>Order items missing from orders</item>
+			<item>Order total and discount display</item>
+			<item>Discount row styling consistency</item>
+			<item>Shipping label price discrepancy</item>
+			<item>Email shipping address and promo codes</item>
+			<item>MFA modal and passkey handling</item>
+			<item>EasyPost webhook status updates</item>
+			<item>HTML content in YOOtheme elements</item>
+			<item>Language file duplicates and missing keys</item>
+			<item>Minor CSRF and security vulnerabilities</item>
+		</fix>
+	</changelog>
+	<changelog>
+		<element>com_customcart</element>
+		<type>component</type>
+		<version>1.0.7</version>
+		<date>December 19, 2025</date>
+		<addition>
+			<item>Media Selector for Email Logo: The email logo setting now uses Joomla's media manager instead of a URL text field. You can browse your media library and select images directly - no more copying and pasting URLs</item>
+		</addition>
+		<fix>
+			<item>CustomCart now properly appears in Joomla's "Update Sites" page (System → Update → Update Sites), allowing you to receive update notifications when new versions are available.</item>
+		</fix>
+	</changelog>
+	<changelog>
+		<element>com_customcart</element>
+		<type>component</type>
+		<version>1.0.6</version>
+		<date>December 16, 2025</date>
+		<addition>
+			<item>Updated User-Agent strings for Stripe/EasyPost API calls</item>
+		</addition>
+		<fix>
+			<item>Mobile checkout/clear buttons not working in all situations</item>
+			<item>Double clear cart prompt on mobile</item>
+			<item>Responsive mode terms checkbox - Now checks both modal and offcanvas checkbox variants</item>
+			<item>Cart images too large on mobile - Reduced from 120px to 80px on small screens</item>
+		</fix>
+	</changelog>
+	<changelog>
+		<element>com_customcart</element>
+		<type>component</type>
+		<version>1.0.5</version>
+		<date>December 15, 2025</date>
+		<addition>
+			<item>Emergency webhook logging for easier troubleshooting</item>
+			<item>Better error tracking when processing payments</item>
+		</addition>
+		<fix>
+			<item>Fixed orders not being created when completing checkout</item>
+			<item>Fixed order confirmation emails not sending after payment</item>
+			<item>Fixed compatibility issue with newer Stripe accounts</item>
+			<item>Fixed price formatting in order notification emails</item>
+		</fix>
+		<remove>
+			<item>Removed outdated Stripe API version that caused webhook failures</item>
+		</remove>
+	</changelog>
+	<changelog>
+		<element>com_customcart</element>
+		<type>component</type>
+		<version>1.0.4</version>
+		<date>December 11, 2025</date>
+		<addition>
+			<item>Stronger protection against spam and automated attacks</item>
+			<item>Improved security on all cart communications</item>
+			<item>Better validation when editing orders in the admin panel</item>
+			<item>Faster detection when external payment services are slow or unavailable</item>
+		</addition>
+		<fix>
+			<item>Clicking on products in the YOOtheme page builder now works properly</item>
+			<item>Product images with spaces in the filename now display correctly everywhere</item>
+			<item>Color picker options now show the hex color field as expected</item>
+			<item>Resolved a compatibility warning with PHP 8</item>
+			<item>Email template preview now loads more reliably</item>
+		</fix>
+		<remove>
+			<item>Removed outdated code that was causing color picker settings to hide</item>
+		</remove>
+	</changelog>
+	<changelog>
+		<element>com_customcart</element>
+		<type>component</type>
+		<version>1.0.3</version>
+		<date>December 4, 2025</date>
+		<addition>
+			<item>Introducing Carto - the CustomCart AI Assistant in the back-end of CustomCart</item>
+		</addition>
+		<fix>
+			<item>Updated CC Product Element image and panel settings with more options and better layout</item>
+			<item>Updated cart fulfillment layout and shipping prices</item>
+		</fix>
+	</changelog>
+	<changelog>
+		<element>com_customcart</element>
+		<type>component</type>
+		<version>1.0.2</version>
+		<date>December 3, 2025</date>
+		<fix>
+			<item>Image Placement setting now correctly hidden when using 2 or 3 column layouts</item>
+			<item>Height Expand panel setting now properly fills available column space</item>
+			<item>Box Shadow &amp; Box Decoration no longer get cut off by container margins</item>
+			<item>Pricing Tiers now correctly disable quantity controls in the cart</item>
+			<item>Dropdown order options now display in correct order (1st, 2nd, 3rd, 4th, 5th)</item>
+		</fix>
+		<change>
+			<item>Added uk-form-small styling to all cart fulfillment dropdowns</item>
+		</change>
+	</changelog>
+	<changelog>
+		<element>com_customcart</element>
+		<type>component</type>
+		<version>1.0.1</version>
+		<date>December 2, 2025</date>
+		<change>
+			<item>Additional language strings added and translated for the front-end and back-end</item>
+		</change>
+		<addition>
+			<item>Cache refresh function when a language is changed</item>
+			<item>Option to change the alert box style on the cart when additional shipping methods are used</item>
+		</addition>
+	</changelog>
+	<changelog>
+		<element>com_customcart</element>
+		<type>component</type>
+		<version>1.0.0</version>
+		<date>December 1, 2025</date>
+		<addition>
+			<item>CustomCart - First Release</item>
+		</addition>
+	</changelog>
 </changelogs>
