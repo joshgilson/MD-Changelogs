@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
 	<changelog>
+        <element>com_customcart</element>
+        <type>component</type>
+        <version>1.4.1</version>
+        <date>September 6, 2026</date>
+        <fix>
+            <item>Fixed the dashboard reporting "Unable to check for updates (HTTP )". The version check read a response property that was removed in the HTTP library Joomla 6 ships, so the status never arrived. It now works on both Joomla 5.4 and Joomla 6.</item>
+            <item>A failed update check now names the actual HTTP status and records the reason in the Joomla log instead of failing silently.</item>
+            <item>Fixed the in-app changelog running all entries in a category together on one line; each entry is now listed separately.</item>
+            <item>The in-app changelog now shows every category Joomla defines. Changes, security notes, language updates and notes were previously hidden.</item>
+            <item>Fixed the cart tracking cookie losing its path, domain, secure and HTTP-only flags on Joomla 6, where Joomla removed support for the older way of setting cookies.</item>
+            <item>Removed an unused PDF export routine that referred to a library Joomla no longer ships.</item>
+        </fix>
+    </changelog>
+	<changelog>
 		<element>com_customcart</element>
 		<type>component</type>
 		<version>1.4.0</version>
