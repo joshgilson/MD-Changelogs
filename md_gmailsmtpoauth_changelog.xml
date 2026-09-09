@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
+        <changelog>
+        <element>com_gmailsmtp</element>
+        <type>extension</type>
+        <version>1.2.0</version>
+        <date>September 9, 2026</date>
+        <fix>
+            <item>Emails sent by other extensions bypassed the plugin and went out through PHP `mail()` instead of Gmail. The plugin only replaced Joomla's two deprecated mailer APIs; extensions using the current API (`MailerFactoryInterface`, standard since Joomla 4.4) never saw the override. The plugin now takes over Joomla's mailer service itself, so all site email routes through your authorised Gmail account.</item>
+        </fix>
+    </changelog>
     <changelog>
-        <element>com_jreleaser</element>
+        <element>com_gmailsmtp</element>
         <type>extension</type>
         <version>1.1.0</version>
         <date>December 8, 2025</date>
@@ -20,7 +29,7 @@
         </fix>
     </changelog>
     <changelog>
-        <element>com_jreleaser</element>
+        <element>com_gmailsmtp</element>
         <type>extension</type>
         <version>1.0.0</version>
         <date>December 1, 2025</date>
