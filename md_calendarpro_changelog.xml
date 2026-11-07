@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
+        <changelog>
+        <element>plg_md_calendar_pro</element>
+        <type>extension</type>
+        <version>2.0.0</version>
+        <date>November 6, 2026</date>
+        <addition>
+            <item>FullCalendar 7.1.4: about 400 KB of JavaScript per page instead of 1.6 MB, with no jQuery or moment.js.</item>
+            <item>Website Style theme (default for new calendars): the calendar takes its colors, buttons and title font from your YOOtheme style, also in dark sections (including styles without inverse colors) and with the dark color scheme, with white or black event text where the style's text color doesn't read on an Event Color.</item>
+            <item>New themes UIkit 3, Monarch, Forma, Breezy and Pulse with color palettes, and a Light, Dark or Auto color scheme for each calendar.</item>
+            <item>New views: Time Grid Week and Day, Multi-Month Year, Timeline Week and Month, Resource Time Grid Week, with toolbar buttons for them and for the Year view.</item>
+            <item>Style tab: Title (YOOtheme headline style, decoration, font family, color, heading level), Toolbar Buttons (style, active style, size), Events, Calendar Grid and Categories.</item>
+            <item>Hover: Zoom, Zoom with Shadow, Lift, Glow or Brighten, with Zoom Size and Speed, plus Focus (the other events fade) and a Tooltip with the time and full title.</item>
+            <item>Title Icons next to event titles, with UIkit icons and ZOOlanders Essentials icon collections.</item>
+            <item>Category Headers in the colors of their events (Timeline and Resource Time Grid views).</item>
+            <item>Date Handling "Accurate": all-day events land on the entered day, times use the calendar's time zone, recurring events keep their weekday, length and end date.</item>
+            <item>Excluded Dates for recurring events (with Date Handling Accurate).</item>
+            <item>Toolbar layouts with a centered title, Day Button Opens and Clicked Date Opens.</item>
+            <item>Events Per Day with a "+ more" popover, Week Numbers, Now Indicator, Business Hours, Initial Scroll Time and End Times.</item>
+            <item>Dynamic Content for the calendar's settings too, not only its items: text, color and select settings can be mapped (not the on/off switches or the General options, nor the Style tab's Title style, decoration, font and color, Toolbar Buttons, Hover and Category Headers options).</item>
+            <item>Labels you leave empty follow the calendar's language (81 FullCalendar translations, right-to-left languages included), and events and modals can be reached with the keyboard.</item>
+        </addition>
+        <change>
+            <item>Installation and updates check for PHP 8.1+, Joomla 5+ and YOOtheme Pro 4+ and stop with a clear message; the plugin is enabled right after installing.</item>
+            <item>The Download ID entered in the plugin settings is now used for updates: Calendar Pro copies it to its Update Site. For the update from 1.x, upload the 2.0 zip or enter the Download ID on the Update Site first.</item>
+            <item>Calendars saved with 1.x keep their look and their Legacy date handling. Switch them to Accurate when you're ready.</item>
+            <item>Recurring events show their full length (start to end), also in calendars saved with 1.x.</item>
+            <item>Custom CSS from 1.x keeps matching the main FullCalendar classes (fc-event, fc-event-title, fc-button, fc-day-today). CSS that colored category headers by position (.fc-col-header-cell:nth-child) no longer matches: use the Event Colors option of Category Headers in the Style tab.</item>
+            <item>The search field shows in the toolbar right away (no Search button to click) and also matches the category and content. Date Navigation is now called Clickable Dates.</item>
+            <item>The URL of every Calendar Pro file carries a checksum, so browsers and CDNs load the new files after an update.</item>
+            <item>The Print button prints only its calendar, without the header, menus and everything else on the page, laid out for paper by FullCalendar: every event of the view (no + more link), also with a fixed Calendar Height.</item>
+        </change>
+        <fix>
+            <item>The Week button showed six weeks when Fixed Weeks was on.</item>
+            <item>An End Time at or before the Start Time (e.g. 12:00 AM) is on the next day.</item>
+            <item>Modal content, "Open in a new window", Limit Start Date and the Modal width, height, full screen, padding and margin settings work again.</item>
+            <item>Several calendars on one page no longer interfere with each other; email cloaking stays active on pages with a calendar.</item>
+            <item>Titles and categories written with HTML character codes, such as the code of the registered trademark sign, show the character itself on the calendar, in modals and in the search.</item>
+        </fix>
+        <security>
+            <item>Event titles, categories, links and Dynamic Content values are safely encoded.</item>
+        </security>
+        <remove>
+            <item>jQuery, moment.js, moment-timezone and the Bootstrap 5 stylesheet are no longer loaded. The Bootstrap 5, Flatly and Minty themes use Classic.</item>
+        </remove>
+    </changelog>
     <changelog>
         <element>plg_md_calendar_pro</element>
         <type>extension</type>
