@@ -3,6 +3,21 @@
       <changelog>
         <element>com_jreleaser</element>
         <type>component</type>
+        <version>1.1.1</version>
+        <date>November 10, 2026</date>
+        <security>
+            <item>Unpublishing a product now also stops its release files being downloaded through direct download links and unused one-time links</item>
+        </security>
+        <fix>
+            <item>Download shortcode with link="raw": when the download was not available (product unpublished, no releases, login required or no access) it returned an alert box instead of a URL, which broke custom buttons and could display them twice. It now always returns a valid URL, and the reason is shown after the link is clicked</item>
+        </fix>
+        <change>
+            <item>With "When User Cannot Access" set to "Hide Button/Content", link="raw" now returns the same explanatory link instead of an empty link that reloaded the page</item>
+        </change>
+    </changelog>
+      <changelog>
+        <element>com_jreleaser</element>
+        <type>component</type>
         <version>1.1.0</version>
         <date>August 21, 2026</date>
         <security>
